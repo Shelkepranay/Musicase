@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #08090c;
+    color: #f8fafc;
+    overflow-x: hidden;
+  }
+
+  /* Custom minimal scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(0, 245, 155, 0.3), 0 0 30px rgba(0, 210, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(0, 245, 155, 0.6), 0 0 50px rgba(0, 210, 255, 0.4);
+  }
+}
+
+.beast-glow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+@keyframes orbitRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.orbit-active {
+  animation: orbitRotate var(--orbit-speed, 6s) linear infinite;
+}

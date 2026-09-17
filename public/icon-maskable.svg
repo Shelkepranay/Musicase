@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0c10" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#06121e" />
+    </linearGradient>
+    <linearGradient id="cyanEmeraldMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="glowRingMask" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed background for maskable icon -->
+  <rect width="512" height="512" fill="url(#bgGradMask)" />
+
+  <!-- Inner safe zone scaled down 80% (scale ~0.76 centered) -->
+  <g transform="translate(61, 61) scale(0.76)">
+    <!-- 8D Orbit Outer Rings -->
+    <circle cx="256" cy="256" r="196" fill="none" stroke="url(#glowRingMask)" stroke-width="3" stroke-dasharray="8 12" opacity="0.6" />
+    <ellipse cx="256" cy="256" rx="170" ry="130" fill="none" stroke="#06b6d4" stroke-width="2.5" opacity="0.4" transform="rotate(-25 256 256)" />
+
+    <!-- Headphone Arc -->
+    <path d="M 140 260 C 140 160, 372 160, 372 260" fill="none" stroke="url(#cyanEmeraldMask)" stroke-width="26" stroke-linecap="round" />
+
+    <!-- Headphone Ear Cups -->
+    <rect x="116" y="240" width="46" height="88" rx="23" fill="#1e293b" stroke="#22d3ee" stroke-width="6" />
+    <rect x="350" y="240" width="46" height="88" rx="23" fill="#1e293b" stroke="#10b981" stroke-width="6" />
+
+    <!-- Sound Wave Bars -->
+    <rect x="194" y="260" width="10" height="42" rx="5" fill="#06b6d4" opacity="0.75" />
+    <rect x="214" y="240" width="10" height="82" rx="5" fill="#22d3ee" opacity="0.85" />
+    <rect x="288" y="240" width="10" height="82" rx="5" fill="#34d399" opacity="0.85" />
+    <rect x="308" y="260" width="10" height="42" rx="5" fill="#10b981" opacity="0.75" />
+
+    <!-- Center Beast Lightning Bolt -->
+    <path d="M 264 212 L 236 266 L 258 266 L 244 322 L 278 260 L 254 260 Z" fill="url(#cyanEmeraldMask)" />
+
+    <!-- Small 8D Badge -->
+    <rect x="226" y="348" width="60" height="22" rx="11" fill="#06b6d4" fill-opacity="0.2" stroke="#22d3ee" stroke-width="1.5" />
+    <text x="256" y="363" fill="#67e8f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="1">8D PRO</text>
+  </g>
+</svg>

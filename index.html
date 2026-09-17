@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Music Player & Downloader</title>
+    <meta name="description" content="Spotify-style music streaming and download application with YouTube playback, EarPod Beast Mode, and 8D spatial audio." />
+    <meta property="og:title" content="Music Player & Downloader" />
+    <meta property="og:description" content="Spotify-style music streaming and download application with YouTube playback, EarPod Beast Mode, and 8D spatial audio." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- PWA & Mobile Web App Meta -->
+    <meta name="theme-color" content="#0b0c10" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Music8D" />
+    <meta name="application-name" content="Music8D" />
+
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- YouTube IFrame Player API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </head>
+  <body class="bg-[#0b0c10] text-[#f8fafc] antialiased overflow-hidden select-none font-['Plus_Jakarta_Sans',sans-serif]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
